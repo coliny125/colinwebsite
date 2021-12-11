@@ -1,0 +1,9 @@
+body{
+  background-color: yellow;
+}
+.section{
+  background: url("Dogecoin_logo.0.png");
+  width: 700px;
+  height: 500px;
+  background-size: 50% 50%;
+}

@@ -42,7 +42,8 @@
     background-color: #badc58;
 }
 .score-container {
-    color: whitesmoke;
+    white-space: pre;
+    color: white;
     display: flex;
     font-weight: bold;
     font-size: 2rem;
@@ -55,17 +56,13 @@
 }
 
 .play-button {
-    background-color: white;
+    background-color: grey;
+    color: white;
     cursor: pointer;
-    display: flex;
-    height: 40px;
+    display: flex
+    height: 20px;
     width: 100px;
 }
-
-.hidden {
-    display: none;
-}
-
 
 @media (min-width: 420px) {
     .colors-container {

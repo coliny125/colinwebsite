@@ -6,7 +6,10 @@ const color0 = document.getElementById("color0"),
       highscoreBox = document.getElementById("highscore"),
       playButton = document.getElementById("play-button"),
       maxLevel = 100
-var sequence, level = 1, subLevel = 0, score = 0, highscore = 0
+var sequence, level = 1, subLevel = 0, score = 0
+let highscore = '0';
+var highScore = localStorage.getItem(highscore);
+return highScore;
 
 function play() {
     userSequence()
@@ -59,6 +62,8 @@ const removeEvents = () => {
 const updateHighscore = () =>{
   if (highscore<score){
     highscoreBox.innerHTML = score;
+    let scoreStr = score.toString();
+    window.localStorage.setItem('highscore', scoreStr);
   }
 }
 

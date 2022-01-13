@@ -37,8 +37,6 @@ let simonApp = {
 
   },
 
-
-
   colorToNumber: function(color){
     switch(color) {
         case "color0":
@@ -119,7 +117,7 @@ let simonApp = {
     },
 
      play: function() {
-       this.addEvents()
+        this.addEvents()
         this.userSequence()
         this.sequenceColors()
 

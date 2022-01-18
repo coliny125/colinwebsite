@@ -13,6 +13,9 @@ function drawArt(ctx) {
   ctx.lineTo(-100, -120);
   ctx.stroke();
 
+  ctx.save();
+  var time = new Date();
+  ctx.rotate(time.getSeconds() + time.getMilliseconds() / 1000);
   ctx.lineWidth = 2;
   ctx.beginPath();
   ctx.moveTo(-10, -110);
@@ -20,26 +23,22 @@ function drawArt(ctx) {
   ctx.lineTo(-90, 50);
   ctx.lineTo(-10, -110);
   ctx.stroke();
+  ctx.restore();
 
   ctx.lineWidth = 2;
   ctx.moveTo(-45, -210);
   ctx.lineTo(-45, 100);
   ctx.stroke();
-  //ctx.beginPath();
-  //ctx.moveTo(-190, -120);
-  //ctx.stroke();
 
+  ctx.save();
+  var time = new Date();
+  ctx.translate(2*time.getSeconds(), 0);
   ctx.beginPath();
   ctx.arc(-100, -120, 50, 0, Math.PI * 2, false);
   ctx.stroke();
+  ctx.restore();
 
-//  ctx.lineWidth = 10;
-  //ctx.beginPath();
-//  ctx.moveTo(-100, -180);
-  //ctx.lineTo(140, 120);
-  //ctx.stroke();
 
-  //ctx.fillRect(-160, 10, 100, 100);
 }
 
 function draw() {
